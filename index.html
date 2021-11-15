@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>OneDay | To Do</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./images/icons8-vaporwave-48.png">
+        <script src="https://kit.fontawesome.com/66978bd54f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="theme-light" onload="initClock()">
+
+        <div class="flex-container">
+
+            <div class="clock">
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>
+                    <span id="period">AM</span>
+                </div>
+                <div class="date">
+                    <span id="dayname">Day</span>
+                    <span id="daynum">00</span>
+                    <span id="month">Month</span>,
+                    <span id="year">Year</span>
+                </div>
+            </div>
+
+            <div class="theme-block">
+                <input type="checkbox" name="theme" id="theme">
+                <label for="theme"></label>
+            </div>
+            
+        </div>
+
+        <div class="flex-container-main">
+
+            <div id="todo-bg">
+                <div class="todo">
+                    <header>
+                        <h1>TO DO</h1>
+                        <span><span class="remainingTasks"></span> tasks left</span>
+                        <button class="deleteAll"><i class="fas fa-sync-alt"></i></button>
+                    </header>
+        
+                    <ul class="todoList" id="todoList">
+                        
+                    </ul>
+        
+                    <div class="inputField">
+                        <button><i class="fas fa-plus"></i></button>
+                        <input type="text" placeholder="Add a new task">
+                    </div>
+                </div>
+            </div>
+
+            <div class="notepad">
+                <header>
+                    <h2>- NOTES -</h2>
+                </header>
+                
+                <div class="notes" id="notes" contenteditable="true">
+            
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="flex-container">
+            <div class="icon-ref">
+                <a target="_blank" href="https://icons8.com/icon/TBsljATGs0Zq/vaporwave">Vaporwave</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>.
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
